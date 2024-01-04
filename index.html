@@ -46,7 +46,7 @@
     <script>
         function generateQRCode() {
             // Fetch data from Golang endpoint
-            fetch('github.com/PakArbi/goqrcode') // Replace with your Golang endpoint URL
+            fetch('https://asia-southeast2-project3-403614.cloudfunctions.net/codeqr') // Replace with your Golang endpoint URL
                 .then(response => response.json())
                 .then(data => {
                     const dataString = JSON.stringify(data);
